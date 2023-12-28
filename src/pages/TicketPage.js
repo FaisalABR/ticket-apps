@@ -77,14 +77,21 @@ const TicketPage = () => {
             alt="Fast X"
           />
           <div className="w-full flex flex-col items-center">
-            <div className="flex justify-between my-5 w-9/12">
+            <div className="flex justify-between my-5 w-11/12">
+              <h1 className="font-semibold text-sm md:text-lg lg:text-xl">
+                Ticket Id:
+              </h1>
+              <h1 className="text-sm md:text-lg lg:text-xl">{id}</h1>
+            </div>
+            <hr className="w-11/12 " />
+            <div className="flex justify-between my-5 w-11/12">
               <h1 className="font-semibold text-sm md:text-xl lg:text-xl">
                 Name:
               </h1>
               <h1 className="text-sm md:text-xl lg:text-xl">{ticket.name}</h1>
             </div>
-            <hr className="w-9/12 " />
-            <div className="flex justify-between my-5 w-9/12">
+            <hr className="w-11/12 " />
+            <div className="flex justify-between my-5 w-11/12">
               <h1 className="font-semibold text-sm md:text-xl lg:text-xl">
                 Selected seats:
               </h1>
@@ -92,8 +99,8 @@ const TicketPage = () => {
                 {ticket.selectedSeats.join(", ")}
               </h1>
             </div>
-            <hr className="w-9/12 " />
-            <div className="flex justify-between my-5 w-9/12">
+            <hr className="w-11/12 " />
+            <div className="flex justify-between my-5 w-11/12">
               <h1 className="font-semibold text-sm md:text-xl lg:text-xl">
                 Total price:
               </h1>
@@ -101,8 +108,8 @@ const TicketPage = () => {
                 {IDR.format(ticket.totalPrice)}
               </h1>
             </div>
-            <hr className="w-9/12 " />
-            <div className="flex justify-between my-5 w-9/12">
+            <hr className="w-11/12 " />
+            <div className="flex justify-between my-5 w-11/12">
               <h1 className="font-semibold text-sm md:text-xl lg:text-xl">
                 Age Rating:
               </h1>
@@ -110,15 +117,15 @@ const TicketPage = () => {
                 {movie.age_rating}
               </h1>
             </div>
-            <hr className="w-9/12 " />
-            <div className="flex justify-between my-5 w-9/12">
+            <hr className="w-11/12 " />
+            <div className="flex justify-between my-5 w-11/12">
               <h1 className="font-semibold text-lg md:text-xl lg:text-xl">
                 Status:
               </h1>
               {renderStatus()}
             </div>
-            <hr className="w-9/12 " />
-            <div className="w-9/12 flex justify-center items-center">
+            <hr className="w-11/12 " />
+            <div className="w-11/12 flex justify-center items-center">
               {ticket.status === "success" ? (
                 <h1>Please show your ticket to cinema</h1>
               ) : (

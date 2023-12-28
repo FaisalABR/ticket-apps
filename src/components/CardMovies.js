@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 
-import Header from "./Header";
-
 import { Link } from "react-router-dom";
 
 import AOS from "aos";
@@ -19,7 +17,6 @@ const CardMovies = ({ data }) => {
   });
   return (
     <>
-      <Header />
       <div
         data-aos="fade-up"
         className="flex flex-col px-4 py-3 shadow-lg rounded-md border-[1px] justify-between"
